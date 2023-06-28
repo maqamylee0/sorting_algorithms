@@ -40,7 +40,6 @@ void bubble_sort(int *array, size_t size)
 	size_t position = 0;
 
 	position = sort_b(array, size, position);
-	print_array(array, size);
 	while (position != 0)
 	{
 		if (position == size - 1)
