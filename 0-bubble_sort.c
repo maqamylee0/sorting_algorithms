@@ -14,20 +14,20 @@ int sort_b(int *array, size_t size, size_t position)
 	j = position;
 	k = position;
 	for (i = j; i < size - 1; i++)
-        {
+	{
 		if (array[j] > array[j + 1])
-                {
-                        temp = array[j + 1];
-                        array[j + 1] = array[j];
-                        array[j] = temp;
+		{
+			temp = array[j + 1];
+			array[j + 1] = array[j];
+			array[j] = temp;
 			print_array(array, size);
-			return j + 1;
-                }
+			return (j + 1);
+		}
 		j++;
-        }
+	}
 	if (k == 0)
-		return 0;
-	return j;
+		return (0);
+	return (j);
 }
 /**
  * bubble_sort- sorts using bubble sort algortithm
